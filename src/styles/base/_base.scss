@@ -1,0 +1,165 @@
+// Global
+html {
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: $tan;
+  font-family: Futura Md BT, Arial, sans-serif;
+  font-size: $m-size;
+  text-align: center;
+}
+
+.title {
+  margin: $xs-size;
+  font-size: $xl-size;
+}
+
+.subtitle {
+  margin: $xs-size;
+  font-size: $m-size;
+  font-family: Futura Md LT, Arial, sans-serif;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+// Nav.js
+nav {
+  background: $off-white;
+  font-size: $s-size;
+  padding: $xs-size;
+  color: $off-black;
+  justify-content: center;
+  border-bottom: 3px solid $brown;
+
+  a {
+    padding: $m-size;
+  }
+
+  .is-active {
+    font-weight: bold;
+  }
+}
+
+// HomePage
+.home {
+  height: 100vh;
+  align-items: center;
+  background: $tan;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: $xs-size;
+
+  i {
+    width: 50%;
+    margin-top: $xs-size;
+  }
+}
+
+// Portfolio Page
+.projects {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  min-height: 15vh;
+
+  .item {
+    max-width: 30vw;
+    max-height: 25vh;
+    text-align: center;
+    color: $off-black;
+
+    img {
+      max-width: 30vw;
+      max-height: 25vh;
+    }
+
+    .desc {
+      display: none;
+      color: $off-black;
+      text-align: center;
+    }
+
+    img:hover + .desc {
+      display: flex;
+    }
+  }
+}
+
+// PortfolioItemPage
+.modal {
+  height: 20vh;
+}
+
+// AboutPage
+.about {
+  width: 100vw;
+  background: teal;
+}
+
+// ContactPage
+.contact {
+  height: 100vh;
+  width: 100vw;
+  background: pink;
+}
+
+.logos {
+  width: 100%;
+}
+
+// AboutPage
+// .about-wrapper {
+//   display: grid;
+//   grid-template-columns: 20% auto;
+//   grid-gap: $s-size;
+//   padding: $s-size;
+//   margin: $xl-size;
+//   background-color: $tan;
+//   justify-content: center;
+// }
+
+// .about-item {
+//   text-align: center;
+//   padding: $s-size;
+// }
+
+// .item1 {
+//   grid-column: 1;
+//   grid-row: 1;
+// }
+// .img-me {
+//   width: $xxl-size;
+// }
+// .img-desc {
+//   width: $xl-size;
+// }
+
+// .item2 {
+//   grid-column: 2;
+//   grid-row: 1;
+//   padding: $s-size;
+//   margin: $s-size;
+//   text-align: left;
+//   font-size: $m-size;
+// }
+
+// .item3 {
+//   grid-column: 1 / span 2;
+//   grid-row: 2;
+//   padding: $s-size;
+//   margin: $s-size;
+// }
+// .logos {
+//   width: 100%;
+// }
