@@ -11,19 +11,19 @@ const AboutPage = () => (
       <div className="about-item item2">
         <p>
           <img className="img-desc" src="/images/location.png" />
-          Location: Gaithersburg, MD
+          Gaithersburg, Maryland
         </p>
         <p>
           <img className="img-desc" src="/images/education.png" />
-          Education: University of Maryland Global Campus
+          University of Maryland Global Campus
         </p>
         <p>
           <img className="img-desc" src="/images/major.png" />
-          Major: Computer Science
+          Computer Science, Front End Development
         </p>
         <p>
           <img className="img-desc" src="/images/work.png" />
-          Current Position: Self Employed
+          Self Employed
         </p>
         <p>
           <img className="img-desc" src="/images/resume.png" />
@@ -32,31 +32,70 @@ const AboutPage = () => (
             justin_kim.pdf
           </a>
         </p>
-        <p>
-          <img className="img-desc" src="/images/email.png" />
-          Email:{" "}
-          <a href="mailto:justinkim0710@gmail.com" target="_blank">
-            justinkim0710@gmail.com
-          </a>
-        </p>
-        <p>
-          <img className="img-desc" src="/images/github.png" />
-          GitHub:{" "}
-          <a href="https://github.com/jdk301" target="_blank">
-            jdk301
-          </a>
-        </p>
-        <p>
-          <img className="img-desc" src="/images/linkedin.png" />
-          Linkedin:{" "}
-          <a href="https://www.linkedin.com/in/justin-kim-dc/" target="_blank">
-            justin-kim-dc
-          </a>
-        </p>
       </div>
 
       <div className="about-item item3">
-        <img className="logos" src="/images/lang-logos.png" />
+        <div>
+          <img className="img-desc" src="/images/html.png" />
+          HTML
+        </div>
+        <div>
+          <img className="img-desc" src="/images/css.png" />
+          CSS
+        </div>
+        <div>
+          <img className="img-desc" src="/images/js.png" />
+          JavaScript
+        </div>
+        <div>
+          <img className="img-desc" src="/images/react.js.png" />
+          React.js
+        </div>
+        <div>
+          <img className="img-desc" src="/images/affinity.png" />
+          Affinity Designer
+        </div>
+      </div>
+
+      <div className="about-item item4">
+        <div>
+          <img className="img-desc" src="/images/udemy.png" />
+          <p>
+            The Complete React Developer Course (w/ Hooks and Redux) by Andrew
+            Mead
+          </p>
+          <br />
+          <span className="skill">React.js</span>
+          <span className="skill">HTML</span>
+          <span className="skill">Sass</span>
+          <span className="skill">Webpack</span>
+          <span className="skill">Jest</span>
+          <span className="skill">Enzyme</span>
+          <span className="skill">Redux</span>
+          <span className="skill">Express</span>
+          <span className="skill">Heroku</span>
+          <span className="skill">Firebase</span>
+        </div>
+        <div>
+          <p>W3 Front End Developer</p>
+          <br />
+          <span className="skill">HTML</span>
+          <span className="skill">CSS</span>
+          <span className="skill">JavaScript</span>
+        </div>
+        <div>
+          <p>U.S. Energy Information Administration</p>
+          <br />
+          <span className="skill">Python</span>
+          <span className="skill">Git</span>
+        </div>
+        <div>
+          <p>Coffee Republic</p>
+          <br />
+          <span className="skill">Management</span>
+          <span className="skill">Business Analysis</span>
+          <span className="skill">Training</span>
+        </div>
       </div>
     </div>
   </section>
