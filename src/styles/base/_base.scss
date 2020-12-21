@@ -73,7 +73,7 @@ nav {
   justify-content: center;
   min-height: 15vh;
 
-  .item {
+  .project-container {
     max-width: 30vw;
     max-height: 25vh;
     text-align: center;
@@ -98,7 +98,8 @@ nav {
 
 // PortfolioItemPage
 .modal {
-  height: 20vh;
+  top: 15%;
+  height: 60vh;
 }
 
 // AboutPage

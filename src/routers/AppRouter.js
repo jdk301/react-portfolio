@@ -7,6 +7,7 @@ import PortfolioItemPage from "../components/PortfolioItemPage.js";
 import ContactPage from "../components/ContactPage.js";
 import NotFoundPage from "../components/NotFoundPage.js";
 import Nav from "../components/Nav.js";
+import MyModal from "../components/PortfolioModal.js";
 
 const AppRouter = () => (
   <BrowserRouter>

@@ -7,13 +7,16 @@ const PortfolioPage = () => (
   <section id="portfolioPage">
     <h1 className="title">Portfolio</h1>
     <div className="projects">
-      <div className="item">
+      <div className="project-container">
         <img src="/images/indecision_thumbnail.png" alt="Project" />
-        <MyModal />
+        <div>
+          <MyModal />
+        </div>
+
         <div className="desc">Indecision App</div>
       </div>
 
-      <div className="item">
+      <div className="project-container">
         <img src="/images/atm_thumbnail.png" alt="Project" />
         <Link to="/portfolio/ACTION ATM">
           <button id="viewBtn">View</button>
@@ -21,7 +24,7 @@ const PortfolioPage = () => (
         <div className="desc">Action ATM</div>
       </div>
 
-      <div className="item">
+      <div className="project-container">
         <img src="/images/fire_thumbnail.png" alt="Project" />
         <Link to="/portfolio/Fire Tracker">
           <button id="viewBtn">View</button>

@@ -1,11 +1,13 @@
 import { Modal, Button } from "react-bootstrap";
 import React from "react";
+import portfolioData from "../portfolioData";
 
-function PortfolioModal(props) {
+function PortfolioModal(props, portfolioData) {
   return (
     <Modal
       {...props}
-      size="lg"
+      {...portfolioData}
+      size="xl"
       aria-labelledby="contained-modal-title-vcenter"
       centered
     >
@@ -31,16 +33,18 @@ export default function MyModal() {
   const [modalShow, setModalShow] = React.useState(false);
 
   return (
-    <React.Fragment>
-      <Button variant="primary" onClick={() => setModalShow(true)}>
-        View
-      </Button>
+    <div>
+      <React.Fragment>
+        <Button variant="primary" onClick={() => setModalShow(true)}>
+          View
+        </Button>
 
-      <PortfolioModal
-        animation="true"
-        show={modalShow}
-        onHide={() => setModalShow(false)}
-      />
-    </React.Fragment>
+        <PortfolioModal
+          animation="true"
+          show={modalShow}
+          onHide={() => setModalShow(false)}
+        />
+      </React.Fragment>
+    </div>
   );
 }
