@@ -32,6 +32,19 @@ const Nav = () => (
     <a className="nav-link">
       <NavHashLink
         smooth
+        to="/gallery#galleryPage"
+        scroll={(el) => scrollWithOffset(el)}
+        activeClassName="selected"
+        exact={true}
+        style={{ color: "black" }}
+      >
+        Gallery
+      </NavHashLink>
+    </a>
+
+    <a className="nav-link">
+      <NavHashLink
+        smooth
         to="/about#aboutPage"
         scroll={(el) => scrollWithOffset(el)}
         activeClassName="selected"

@@ -1,9 +1,9 @@
 import React from "react";
 
 const GalleryPage = () => (
-  <div className="gallery-container">
+  <section className="gallery" id="galleryPage">
     <h1 className="section-header">Gallery</h1>
-    <section className="gallery">
+    <div className="gallery-container">
       <figure className="gallery__item gallery__item--1">
         <img
           src="/images/hairsalon-site.png"
@@ -46,8 +46,8 @@ const GalleryPage = () => (
           alt="Image 6"
         />
       </figure>
-    </section>
-  </div>
+    </div>
+  </section>
 );
 
 export default GalleryPage;

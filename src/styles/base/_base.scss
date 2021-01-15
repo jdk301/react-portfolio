@@ -99,10 +99,10 @@ body {
 }
 
 // GalleryPage.js
-.gallery-container {
+.gallery {
   background: $off-white;
 }
-.gallery {
+.gallery-container {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(8, 5vw);
