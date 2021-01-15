@@ -5,117 +5,229 @@ html {
   justify-content: center;
   scroll-behavior: smooth;
 }
-
 body {
-  background: $tan;
-  font-family: Futura Md BT, Arial, sans-serif;
+  background: $off-white;
+  font-family: "Futura Md BT", Arial, sans-serif;
   font-size: $m-size;
   text-align: center;
 }
-.home {
-  margin: $xs-size;
-  text-align: center;
-  font-family: Futura Md LT, Arial, sans-serif;
-}
-.title {
-  font-size: $xl-size;
-}
+.section-header {
+  margin: auto;
+  padding: $l-size $m-size;
+  justify-content: center;
 
-.subtitle {
-  font-size: $m-size;
-}
-
-.sticky {
-  position: sticky;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 10;
+  .title {
+    color: $off-black;
+    font-size: $l-size;
+    font-weight: $l-font;
+    margin: auto;
+  }
 }
 
 // Nav.js
-nav {
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  width: inherit;
   background: $off-white;
   font-size: $s-size;
-  padding: $xs-size;
   color: $off-black;
   justify-content: center;
+  padding: $xxs-size;
   border-bottom: 3px solid $brown;
+  margin: auto;
 
-  a {
-    padding: $m-size;
+  .nav-link {
+    float: center;
+    padding-left: $s-size;
+    .is-active {
+      font-weight: bold;
+    }
   }
 
-  .is-active {
-    font-weight: bold;
+  .social-links {
+    position: absolute;
+    margin: auto;
+    padding: 0;
+    right: $m-size;
+    img {
+      width: 2rem;
+    }
   }
 }
-.links {
-  float: right;
-
-  img {
-    width: 30px;
-  }
+@media screen and (min-width: 1024px) {
 }
 
 // HomePage
 .home {
   height: 100vh;
-  align-items: center;
-  background: $tan;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: $xs-size;
+  margin: auto;
+  text-align: center;
 
-  i {
-    width: 50%;
-    margin-top: $xs-size;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media only screen and (max-device-width: 1366px) {
+    .home {
+      background-attachment: scroll;
+    }
   }
-}
-
-// Portfolio Page
-.projects {
-  display: flex;
-  flex-flow: row;
-  justify-content: center;
-  height: 100%;
-  width: 100vw;
-  padding-bottom: $m-size;
-
-  .project-container {
-    max-width: 30vw;
-    max-height: 30vh;
-    margin-bottom: 10px;
-    text-align: center;
-    color: $off-black;
-
-    img {
-      max-width: 30vw;
-      max-height: 25vh;
+  .home-container {
+    margin: auto;
+    position: absolute;
+    top: 30vh;
+    left: 0;
+    right: 0;
+    .title {
+      font-size: $xl-size;
     }
 
-    .desc {
+    .subtitle {
+      font-size: $m-size;
+    }
+    i {
+      margin: $s-size auto;
       display: none;
-      color: $off-black;
-      text-align: center;
-    }
-
-    img:hover + .desc {
-      display: flex;
     }
   }
 }
 
-// PortfolioItemPage
-.modal {
-  top: 15%;
-  height: 60vh;
+// GalleryPage.js
+.gallery-container {
+  background: $off-white;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 5vw);
+  grid-gap: $s-size;
+  margin-left: $margin-w;
+  margin-right: $margin-w;
+}
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.gallery__item--1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 9;
+}
+.gallery__item--2 {
+  grid-column-start: 4;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.gallery__item--3 {
+  grid-column-start: 4;
+  grid-column-end: 6;
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
+.gallery__item--4 {
+  grid-column-start: 6;
+  grid-column-end: 9;
+  grid-row-start: 3;
+  grid-row-end: 6;
+}
+.gallery__item--5 {
+  grid-column-start: 4;
+  grid-column-end: 6;
+  grid-row-start: 5;
+  grid-row-end: 9;
+}
+.gallery__item--6 {
+  grid-column-start: 6;
+  grid-column-end: 9;
+  grid-row-start: 6;
+  grid-row-end: 9;
+}
+
+// ProjectsPage.js
+.projects-page {
+  height: 100%;
+  display: block;
+  flex-wrap: wrap;
+  box-sizing: inherit;
+  text-align: center;
+  margin-left: $margin-w;
+  margin-right: $margin-w;
+  padding: 0;
+
+  .new-project-container {
+    display: inline-block;
+    max-width: 800px;
+    vertical-align: top;
+  }
+  .button {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+// Projects.js
+.project {
+  display: block;
+  //border: 1px solid $brown;
+  width: 20vw;
+  height: 500px;
+  padding: 0 $xs-size;
+  justify-content: center;
+  background: white;
+
+  .img-container {
+    height: 35vh;
+    .img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+  .about-container {
+    //border-bottom: 1px solid $gray;
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+    .title {
+      margin: 0 $xs-size;
+      padding-bottom: $xxs-size;
+      font-size: $m-size;
+      font-weight: $xl-font;
+    }
+    .desc {
+      margin: 0 $xs-size;
+      padding-bottom: $xxs-size;
+      font-size: $s-size;
+      font-weight: $m-font;
+    }
+    .tech {
+      margin: 0 $xs-size;
+      padding-bottom: $xxs-size;
+      font-size: $s-size;
+      font-weight: $l-font;
+    }
+  }
+  .button-container {
+    display: flex;
+    text-align: center;
+    a {
+      display: inline-block;
+      margin: 0 $s-size;
+      border: 0.5px solid $gray;
+      width: 9vw;
+    }
+  }
 }
 
 // AboutPage
 .about {
-  width: 100vw;
   height: 100%;
 }
 .about-wrapper {
@@ -136,10 +248,6 @@ nav {
   grid-row: 1;
   justify-content: center;
   background: $brown;
-}
-.img-me {
-  width: $xxl-size;
-  margin: auto;
 }
 .img-desc {
   width: $l-size;
@@ -188,15 +296,36 @@ nav {
   width: 100vw;
 }
 
-// ContactPage
+// ContactPage.js
 .contact {
-  height: 100vh;
-  width: 100vw;
-  background: pink;
+  padding-bottom: $l-size;
 }
 
 .form-container {
   margin: auto;
   width: 45%;
   padding: 12px;
+}
+
+// Footer.js
+.footer {
+  height: 10vh;
+  display: block;
+  align-items: center;
+  background: $gray;
+  font-size: $s-size;
+  padding: $s-size $s-size;
+  .footer-container {
+    display: inline-block;
+    .icon-logo {
+      width: 50px;
+    }
+    .copyright {
+      display: inline-block;
+    }
+    .footer-links {
+      width: 20px;
+      display: none;
+    }
+  }
 }

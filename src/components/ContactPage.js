@@ -15,7 +15,9 @@ function ContactPage() {
 
   return (
     <section id="contactPage" className="contact">
-      <h1 className="title">Contact</h1>
+      <div className="section-header">
+        <h1 className="title">Contact</h1>
+      </div>
 
       <div className="form-container">
         <Form noValidate validated={validated} onSubmit={handleSubmit}>

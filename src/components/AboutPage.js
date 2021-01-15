@@ -2,11 +2,12 @@ import React from "react";
 
 const AboutPage = () => (
   <section id="aboutPage" className="about">
-    <h1 className="title">Me</h1>
+    <div className="section-header">
+      <h1 className="title">Me</h1>
+    </div>
+
     <div className="about-wrapper">
-      <div className="about-item item1">
-        <img className="img-me" src="/images/headshot.png" />
-      </div>
+      <div className="about-item item1"></div>
 
       <div className="about-item item2">
         <p>
