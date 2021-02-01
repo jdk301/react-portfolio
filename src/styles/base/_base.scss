@@ -135,7 +135,6 @@ body {
 .project {
   display: grid;
   grid-template-columns: 1fr;
-  //grid-template-rows: auto 50px 200px 70px 50px;
   grid-template-rows: 1fr auto auto auto auto;
   grid-row-gap: 2px;
   grid-auto-flow: row;
@@ -151,8 +150,6 @@ body {
 
     .img {
       width: 100%;
-      // width: 300px;
-      // height: 200px;
     }
   }
 
@@ -173,15 +170,6 @@ body {
     grid-row: 4/5;
     font-size: $s-size;
     font-weight: $l-font;
-  }
-  .project__button-group {
-    display: flex;
-    text-align: center;
-    a {
-      display: inline-block;
-      margin: 0 $s-size;
-      width: 9vw;
-    }
   }
 }
 

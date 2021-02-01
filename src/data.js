@@ -16,7 +16,7 @@ export const projectData = [
     description:
       "A simple React app to select a random action. This app was built on the Udemy React Course by Andrew Mead.",
     tech: "CSS, Sass, JavaScript, React, Babel, Webpack, Heroku",
-    image: "../images/indecision_thumbnail.png",
+    image: "../images/indecision-app.png",
     url: "https://indecision-app-jdev.herokuapp.com/",
     github: "https://github.com/jdk301/Indecision-App",
   },
