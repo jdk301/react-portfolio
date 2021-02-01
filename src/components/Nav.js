@@ -4,79 +4,43 @@ import { NavHashLink } from "react-router-hash-link";
 
 const scrollWithOffset = (el) => {
   const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
-  const yOffset = -65;
+  const yOffset = -50;
   window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
 };
 
 const Nav = () => (
   <nav className="nav">
-    <a className="nav-link">
-      <NavHashLink to="/home#top" style={{ color: "black" }}>
-        Home
-      </NavHashLink>
-    </a>
+    <ul className="nav__list">
+      <li>
+        <a className="nav-link" href="#top">
+          Home
+        </a>
+      </li>
 
-    <a className="nav-link">
-      <NavHashLink
-        smooth
-        to="/portfolio#portfolioPage"
-        scroll={(el) => scrollWithOffset(el)}
-        activeClassName="selected"
-        exact={true}
-        style={{ color: "black" }}
-      >
-        Portfolio
-      </NavHashLink>
-    </a>
+      <li>
+        <a className="nav-link" href="#portfolio">
+          Portfolio
+        </a>
+      </li>
 
-    <a className="nav-link">
-      <NavHashLink
-        smooth
-        to="/gallery#galleryPage"
-        scroll={(el) => scrollWithOffset(el)}
-        activeClassName="selected"
-        exact={true}
-        style={{ color: "black" }}
-      >
-        Gallery
-      </NavHashLink>
-    </a>
+      <li>
+        <a className="nav-link" href="#gallery">
+          Gallery
+        </a>
+      </li>
 
-    <a className="nav-link">
-      <NavHashLink
-        smooth
-        to="/about#aboutPage"
-        scroll={(el) => scrollWithOffset(el)}
-        activeClassName="selected"
-        exact={true}
-        style={{ color: "black" }}
-      >
-        About
-      </NavHashLink>
-    </a>
+      <li>
+        <a className="nav-link" href="#about">
+          About
+        </a>
+      </li>
 
-    <a className="nav-link">
-      <NavHashLink
-        smooth
-        to="/contact#contactPage"
-        scroll={(el) => scrollWithOffset(el)}
-        activeClassName="selected"
-        exact={true}
-        style={{ color: "black" }}
-      >
-        Contact
-      </NavHashLink>
-    </a>
-
-    <div className="social-links">
-      <a href="https://github.com/jdk301" target="_blank">
-        <img className="img-desc" src="/images/github.png" />
-      </a>
-
-      <a href="https://www.linkedin.com/in/justin-kim-dc/" target="_blank">
-        <img className="img-desc" src="/images/linkedin.png" />
-      </a>
-    </div>
+      <li>
+        <a className="nav-link" href="#contact">
+          Contact
+        </a>
+      </li>
+    </ul>
   </nav>
 );
 

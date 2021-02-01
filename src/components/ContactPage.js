@@ -14,12 +14,24 @@ function ContactPage() {
   };
 
   return (
-    <section id="contactPage" className="contact">
+    <section className="contact" id="contact">
       <div className="section-header">
-        <h1 className="title">Contact</h1>
+        <h1 className="title">Connect</h1>
       </div>
 
-      <div className="form-container">
+      <li className="social-links">
+        <a href="https://github.com/jdk301" target="_blank">
+          <img className="img-desc" src="/images/github.png" />
+        </a>
+      </li>
+
+      <li className="social-links">
+        <a href="https://www.linkedin.com/in/justin-kim-dc/" target="_blank">
+          <img className="img-desc" src="/images/linkedin.png" />
+        </a>
+      </li>
+
+      {/* <div className="form-container">
         <Form noValidate validated={validated} onSubmit={handleSubmit}>
           <Form.Control
             type="text"
@@ -43,7 +55,7 @@ function ContactPage() {
             Submit
           </Button>
         </Form>
-      </div>
+      </div> */}
     </section>
   );
 }

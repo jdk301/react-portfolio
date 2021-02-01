@@ -5,7 +5,7 @@ import Projects from "./Projects";
 import { projectData } from "../data";
 
 const ProjectsPage = () => (
-  <section className="projects-page" id="portfolioPage">
+  <section className="projects-page" id="portfolio">
     <h1 className="section-header">Projects</h1>
 
     <article className="new-project-container">

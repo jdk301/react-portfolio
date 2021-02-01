@@ -12,9 +12,9 @@ body {
   text-align: center;
 }
 .section-header {
+  justify-content: center;
   margin: auto;
   padding: $l-size $m-size;
-  justify-content: center;
 
   .title {
     color: $off-black;
@@ -26,33 +26,36 @@ body {
 
 // Nav.js
 .nav {
+  background: $off-white;
+  border-bottom: 3px solid $brown;
+  color: $off-black;
+  font-size: $s-size;
+  float: middle;
+  justify-content: center;
   position: sticky;
   top: 0;
   z-index: 10;
-  width: inherit;
-  background: $off-white;
-  font-size: $s-size;
-  color: $off-black;
-  justify-content: center;
-  padding: $xxs-size;
-  border-bottom: 3px solid $brown;
-  margin: auto;
 
-  .nav-link {
-    float: center;
-    padding-left: $s-size;
-    .is-active {
-      font-weight: bold;
-    }
+  .nav__list {
+    margin: 0;
+    padding: 0;
+    position: sticky;
+    list-style-type: none;
+    // overflow: hidden;
   }
 
-  .social-links {
-    position: absolute;
+  li {
+    display: inline-block;
     margin: auto;
-    padding: 0;
-    right: $m-size;
-    img {
-      width: 2rem;
+  }
+
+  .nav-link {
+    color: black;
+    padding-left: $s-size;
+    text-align: center;
+    text-decoration: none;
+    .is-active {
+      font-weight: bold;
     }
   }
 }
@@ -98,63 +101,9 @@ body {
   }
 }
 
-// GalleryPage.js
-.gallery {
-  background: $off-white;
-}
-.gallery-container {
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(8, 5vw);
-  grid-gap: $s-size;
-  margin-left: $margin-w;
-  margin-right: $margin-w;
-}
-.gallery__img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.gallery__item--1 {
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 9;
-}
-.gallery__item--2 {
-  grid-column-start: 4;
-  grid-column-end: 9;
-  grid-row-start: 1;
-  grid-row-end: 3;
-}
-.gallery__item--3 {
-  grid-column-start: 4;
-  grid-column-end: 6;
-  grid-row-start: 3;
-  grid-row-end: 5;
-}
-.gallery__item--4 {
-  grid-column-start: 6;
-  grid-column-end: 9;
-  grid-row-start: 3;
-  grid-row-end: 6;
-}
-.gallery__item--5 {
-  grid-column-start: 4;
-  grid-column-end: 6;
-  grid-row-start: 5;
-  grid-row-end: 9;
-}
-.gallery__item--6 {
-  grid-column-start: 6;
-  grid-column-end: 9;
-  grid-row-start: 6;
-  grid-row-end: 9;
-}
-
 // ProjectsPage.js
 .projects-page {
-  height: 100%;
+  height: 100vh;
   display: block;
   flex-wrap: wrap;
   box-sizing: inherit;
@@ -174,7 +123,7 @@ body {
   }
 }
 
-// Projects.js
+// Projects.js (individual project block)
 .project {
   display: block;
   //border: 1px solid $brown;
@@ -226,9 +175,64 @@ body {
   }
 }
 
+// GalleryPage.js
+.gallery {
+  background: $off-white;
+  height: 100vh;
+}
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 5vw);
+  grid-gap: $s-size;
+  margin-left: $margin-w;
+  margin-right: $margin-w;
+}
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.gallery__item--1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 9;
+}
+.gallery__item--2 {
+  grid-column-start: 4;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.gallery__item--3 {
+  grid-column-start: 4;
+  grid-column-end: 6;
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
+.gallery__item--4 {
+  grid-column-start: 6;
+  grid-column-end: 9;
+  grid-row-start: 3;
+  grid-row-end: 6;
+}
+.gallery__item--5 {
+  grid-column-start: 4;
+  grid-column-end: 6;
+  grid-row-start: 5;
+  grid-row-end: 9;
+}
+.gallery__item--6 {
+  grid-column-start: 6;
+  grid-column-end: 9;
+  grid-row-start: 6;
+  grid-row-end: 9;
+}
+
 // AboutPage
 .about {
-  height: 100%;
+  height: 100vh;
 }
 .about-wrapper {
   display: grid;
@@ -298,7 +302,22 @@ body {
 
 // ContactPage.js
 .contact {
+  height: 50vh;
   padding-bottom: $l-size;
+}
+
+.social-links {
+  // margin: auto;
+  // padding: auto;
+  //right: $m-size;
+  margin: $xs-size;
+  padding: 0;
+  list-style-type: none;
+  display: inline-block;
+
+  img {
+    width: 50px;
+  }
 }
 
 .form-container {

@@ -3,6 +3,7 @@ import React from "react";
 const HomePage = () => (
   <section
     className="home"
+    id="top"
     style={{
       backgroundImage: `url("/images/coffeebg.jpg")`,
       backgroundSize: "cover",

@@ -1,7 +1,7 @@
 import React from "react";
 
 const GalleryPage = () => (
-  <section className="gallery" id="galleryPage">
+  <section className="gallery" id="gallery">
     <h1 className="section-header">Gallery</h1>
     <div className="gallery-container">
       <figure className="gallery__item gallery__item--1">
