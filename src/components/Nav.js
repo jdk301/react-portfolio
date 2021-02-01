@@ -29,11 +29,11 @@ const Nav = () => (
         </a>
       </li>
 
-      <li>
+      {/* <li>
         <a className="nav-link" href="#about">
           About
         </a>
-      </li>
+      </li> */}
 
       <li>
         <a className="nav-link" href="#contact">

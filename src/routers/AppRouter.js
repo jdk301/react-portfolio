@@ -16,7 +16,7 @@ const AppRouter = () => (
       <Nav />
       <HomePage className="home" />
       {/* <AboutPage className="about" /> */}
-      <ProjectsPage className="portfolio" exact="true" />
+      <ProjectsPage className="project-page" exact="true" />
       <GalleryPage className="gallery" />
       <ContactPage className="contact" />
       <Footer className="footer" />
