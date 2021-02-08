@@ -1,27 +1,21 @@
 // Global
 html {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   justify-content: center;
   scroll-behavior: smooth;
 }
 body {
   background: $off-white;
-  font-family: "Futura Md BT", Arial, sans-serif;
+  font-family: $font-body;
   font-size: $m-size;
   text-align: center;
 }
 .section-header {
   justify-content: center;
   margin: auto;
-  padding: $l-size $m-size;
-
-  .title {
-    color: $off-black;
-    font-size: $l-size;
-    font-weight: $l-font;
-    margin: auto;
-  }
+  padding: $m-size 0;
+  font-size: $m-font;
 }
 
 // Nav.js
@@ -34,30 +28,33 @@ body {
   justify-content: center;
   position: sticky;
   top: 0;
+  width: 100%;
   z-index: 10;
 
-  .nav__list {
-    margin: 0;
-    padding: 0;
-    position: sticky;
-    list-style-type: none;
-    // overflow: hidden;
-  }
-
-  li {
-    display: inline-block;
-    margin: auto;
-  }
-
-  .nav-link {
-    color: black;
-    padding-left: $s-size;
-    text-align: center;
-    text-decoration: none;
-    .is-active {
-      font-weight: bold;
+  .nav-content {
+    .nav-items {
+      margin: $xs-size;
+      padding: 0;
+      position: sticky;
+      list-style-type: none;
+      overflow: hidden;
+      .nav-item {
+        color: black;
+        padding-left: $s-size;
+        text-decoration: none;
+        .is-active {
+          font-weight: bold;
+        }
+        &:hover {
+          color: $brown;
+          cursor: pointer;
+        }
+      }
     }
   }
+  //Animations
+
+  //Media Query
   @media (max-width: 485px) {
     font-size: $xs-size;
   }
@@ -65,17 +62,16 @@ body {
 
 // HomePage
 .home {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: $xs-size;
-  margin: auto;
-  text-align: center;
-
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  margin: auto;
+  padding: $xs-size;
+  text-align: center;
 
   @media only screen and (max-device-width: 1366px) {
     .home {
@@ -128,21 +124,32 @@ body {
 
   .project-page__project {
     vertical-align: top;
+    transform: scale(1, 1);
+    transition: 0.5s;
+
+    &:hover {
+      transform: scale(1.05, 1.05);
+    }
+  }
+
+  .project-page__button-group {
+    width: 100%;
   }
 }
 
 // Projects.js (individual project block)
 .project {
+  background: white;
   display: grid;
+  font-family: "Montserrat", sans-serif;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr auto auto auto auto;
   grid-row-gap: 2px;
   grid-auto-flow: row;
-  font-family: "Montserrat", sans-serif;
   justify-content: center;
   justify-items: stretch;
+  padding: 0;
   text-align: left;
-  background: white;
 
   .project__img {
     grid-column: 1/2;
@@ -150,6 +157,7 @@ body {
 
     .img {
       width: 100%;
+      height: 100%;
     }
   }
 
@@ -162,12 +170,14 @@ body {
   .project__summary {
     grid-column: 1/2;
     grid-row: 3/4;
+    height: 8rem;
     font-size: $s-size;
     font-weight: $m-font;
   }
   .project__tech {
     grid-column: 1/2;
     grid-row: 4/5;
+    height: 4rem;
     font-size: $s-size;
     font-weight: $l-font;
   }
@@ -300,21 +310,14 @@ body {
 
 // ContactPage.js
 .contact {
-  height: 50vh;
-  padding-bottom: $l-size;
+  padding-bottom: $m-size;
 }
-
 .social-links {
-  // margin: auto;
-  // padding: auto;
-  //right: $m-size;
   margin: $xs-size;
-  padding: 0;
   list-style-type: none;
   display: inline-block;
-
   img {
-    width: 50px;
+    width: 45px;
   }
 }
 
@@ -326,19 +329,27 @@ body {
 
 // Footer.js
 .footer {
-  height: 10vh;
   display: block;
   align-items: center;
-  background: $gray;
   font-size: $s-size;
-  padding: $s-size $s-size;
+  padding: $s-size 0;
+
   .footer-container {
-    display: inline-block;
+    hr {
+      display: block;
+      height: 1px;
+      border: 0;
+      border-top: 2px solid $brown;
+      padding: 0;
+      margin-left: $margin-w;
+      margin-right: $margin-w;
+    }
     .icon-logo {
       width: 50px;
     }
     .copyright {
-      display: inline-block;
+      margin-top: $xs-size;
+      color: gray;
     }
     .footer-links {
       width: 20px;

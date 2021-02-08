@@ -15,17 +15,17 @@ export default function Projects(props) {
         {props.tech}
       </p>
 
-      <ButtonGroup className="project__button-group">
-        <Button variant="light" disabled>
+      {/* <ButtonGroup className="project__button-group">
+        {/* <Button variant="light" disabled>
           inspect
-        </Button>
-        <Button variant="light" target="_blank" href={props.url}>
+        </Button> 
+        <Button variant="primary" target="_blank" href={props.url}>
           visit
         </Button>
-        <Button variant="light" target="_blank" href={props.github}>
+        <Button variant="secondary" target="_blank" href={props.github}>
           source
         </Button>
-      </ButtonGroup>
+      </ButtonGroup> */}
     </article>
   );
 }

@@ -11,17 +11,15 @@ import NotFoundPage from "../components/NotFoundPage";
 import Footer from "../components/Footer";
 
 const AppRouter = () => (
-  <BrowserRouter>
-    <div>
-      <Nav />
-      <HomePage className="home" />
-      {/* <AboutPage className="about" /> */}
-      <ProjectsPage className="project-page" exact="true" />
-      <GalleryPage className="gallery" />
-      <ContactPage className="contact" />
-      <Footer className="footer" />
-    </div>
-  </BrowserRouter>
+  <div>
+    <Nav />
+    <HomePage className="home" id="home" />
+    {/* <AboutPage className="about" /> */}
+    <ProjectsPage className="project-page" exact="true" id="project" />
+    <GalleryPage className="gallery" id="gallery" />
+    <ContactPage className="contact" id="contact" />
+    <Footer className="footer" />
+  </div>
 );
 
 export default AppRouter;

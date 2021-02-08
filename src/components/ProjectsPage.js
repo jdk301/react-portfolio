@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { ButtonGroup, Button } from "react-bootstrap";
 import Projects from "./Projects";
 import { projectData } from "../data";
+import { transform } from "framer-motion";
 
 const ProjectsPage = () => (
   <section className="project-page" id="portfolio">
@@ -18,6 +19,22 @@ const ProjectsPage = () => (
           url={projectData[0].url}
           github={projectData[0].github}
         />
+        <ButtonGroup className="project-page__button-group">
+          <Button
+            variant="primary"
+            target="_blank"
+            href="https://react-course-2-expensify-jdev.herokuapp.com/"
+          >
+            visit
+          </Button>
+          <Button
+            variant="secondary"
+            target="_blank"
+            href="https://github.com/jdk301/Expensify-App"
+          >
+            source
+          </Button>
+        </ButtonGroup>
       </article>
 
       <article className="project-page__project" id="indecision-app">
@@ -29,6 +46,22 @@ const ProjectsPage = () => (
           url={projectData[1].url}
           github={projectData[1].github}
         />
+        <ButtonGroup className="project-page__button-group">
+          <Button
+            variant="primary"
+            target="_blank"
+            href="https://indecision-app-jdev.herokuapp.com/"
+          >
+            visit
+          </Button>
+          <Button
+            variant="secondary"
+            target="_blank"
+            href="https://github.com/jdk301/Indecision-App"
+          >
+            source
+          </Button>
+        </ButtonGroup>
       </article>
 
       <article className="project-page__project" id="action-atm">
@@ -39,6 +72,18 @@ const ProjectsPage = () => (
           tech={projectData[2].tech}
           github={projectData[2].github}
         />
+        <ButtonGroup className="project-page__button-group">
+          <Button variant="primary" target="_blank" disabled>
+            visit
+          </Button>
+          <Button
+            variant="secondary"
+            target="_blank"
+            href="https://github.com/jdk301/atm"
+          >
+            source
+          </Button>
+        </ButtonGroup>
       </article>
 
       <article className="project-page__project" id="fire-tracker">
@@ -49,6 +94,14 @@ const ProjectsPage = () => (
           tech={projectData[3].tech}
           github={projectData[3].github}
         />
+        <ButtonGroup className="project-page__button-group">
+          <Button variant="primary" target="_blank" disabled>
+            visit
+          </Button>
+          <Button variant="secondary" target="_blank" disabled>
+            source
+          </Button>
+        </ButtonGroup>
       </article>
     </div>
   </section>
