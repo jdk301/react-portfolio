@@ -1,0 +1,37 @@
+.project-page {
+  height: auto;
+  display: block;
+  justify-content: center;
+  margin: 0 $margin-w;
+  padding: 0;
+
+  .project-page__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 50px;
+    grid-auto-flow: row;
+    place-content: center / stretch;
+
+    @media (max-width: 1460px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 890px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  .project-page__project {
+    vertical-align: top;
+    transform: scale(1, 1);
+    transition: 0.5s;
+
+    &:hover {
+      transform: scale(1.05, 1.05);
+    }
+  }
+
+  .project-page__button-group {
+    width: 100%;
+  }
+}

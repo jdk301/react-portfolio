@@ -1,0 +1,29 @@
+.footer {
+  display: block;
+  align-items: center;
+  font-size: $s-size;
+  padding: $s-size 0;
+
+  .footer-container {
+    hr {
+      display: block;
+      height: 1px;
+      border: 0;
+      border-top: 2px solid $brown;
+      padding: 0;
+      margin-left: $margin-w;
+      margin-right: $margin-w;
+    }
+    .icon-logo {
+      width: 50px;
+    }
+    .copyright {
+      margin-top: $xs-size;
+      color: gray;
+    }
+    .footer-links {
+      width: 20px;
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.contact {
+  padding-bottom: $m-size;
+}
+.social-links {
+  margin: $xs-size;
+  list-style-type: none;
+  display: inline-block;
+  img {
+    width: 45px;
+  }
+}
+
+.form-container {
+  margin: auto;
+  width: 45%;
+  padding: 12px;
+}

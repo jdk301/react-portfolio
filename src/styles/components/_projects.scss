@@ -1,0 +1,44 @@
+.project {
+  background: white;
+  display: grid;
+  font-family: "Montserrat", sans-serif;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto auto auto auto;
+  grid-row-gap: 2px;
+  grid-auto-flow: row;
+  justify-content: center;
+  justify-items: stretch;
+  padding: 0;
+  text-align: left;
+
+  .project__img {
+    grid-column: 1/2;
+    grid-row: 1/2;
+
+    .img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .project__title {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    font-size: $m-size;
+    font-weight: $xl-font;
+  }
+  .project__summary {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    height: 8rem;
+    font-size: $s-size;
+    font-weight: $m-font;
+  }
+  .project__tech {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    height: 4rem;
+    font-size: $s-size;
+    font-weight: $l-font;
+  }
+}

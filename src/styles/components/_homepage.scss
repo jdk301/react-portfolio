@@ -1,0 +1,36 @@
+.home {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  margin: auto;
+  padding: $xs-size;
+  text-align: center;
+
+  @media only screen and (max-device-width: 1366px) {
+    .home {
+      background-attachment: scroll;
+    }
+  }
+  .home-container {
+    margin: auto;
+    position: absolute;
+    top: 30vh;
+    left: 0;
+    right: 0;
+    .title {
+      font-size: $xl-size;
+    }
+
+    .subtitle {
+      font-size: $m-size;
+    }
+    i {
+      margin: $s-size auto;
+      display: none;
+    }
+  }
+}
