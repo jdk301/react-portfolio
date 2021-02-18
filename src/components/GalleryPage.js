@@ -10,6 +10,7 @@ const GalleryPage = () => (
           className="gallery__img"
           alt="Image 1"
         />
+        <button className="zoom">+</button>
       </figure>
       <figure className="gallery__item gallery__item--2">
         <img
