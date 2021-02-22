@@ -6,7 +6,7 @@ const GalleryPage = () => (
     <div className="gallery-container">
       <figure className="gallery__item gallery__item--1">
         <img
-          src="/images/hairsalon-site.png"
+          src="/images/dronehub.png"
           className="gallery__img"
           alt="Image 1"
         />
@@ -14,38 +14,30 @@ const GalleryPage = () => (
       </figure>
       <figure className="gallery__item gallery__item--2">
         <img
-          src="/images/pineapple2.jpg"
+          src="/images/hairsalon-site.png"
           className="gallery__img"
           alt="Image 2"
         />
       </figure>
       <figure className="gallery__item gallery__item--3">
         <img
-          src="/images/coffeebgwhite.jpg"
+          src="/images/coffee-app/home.png"
           className="gallery__img"
           alt="Image 3"
         />
       </figure>
       <figure className="gallery__item gallery__item--4">
-        <img
-          src="/images/coffeebgorange.jpg"
-          className="gallery__img"
-          alt="Image 4"
-        />
+        <img src="/images/summet.jpg" className="gallery__img" alt="Image 4" />
       </figure>
       <figure className="gallery__item gallery__item--5">
         <img
-          src="/images/coffeebeans.jpg"
+          src="/images/paperswan.jpg"
           className="gallery__img"
           alt="Image 5"
         />
       </figure>
       <figure className="gallery__item gallery__item--6">
-        <img
-          src="/images/mountains.jpg"
-          className="gallery__img"
-          alt="Image 6"
-        />
+        <img src="/images/dopeio.png" className="gallery__img" alt="Image 6" />
       </figure>
     </div>
   </section>
