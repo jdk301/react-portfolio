@@ -21,6 +21,17 @@ const Nav = () => (
         <Link
           className="nav-item"
           activeClass="active"
+          to="about"
+          spy={true}
+          smooth={true}
+          offset={-45}
+          duration={500}
+        >
+          About
+        </Link>
+        <Link
+          className="nav-item"
+          activeClass="active"
           to="portfolio"
           spy={true}
           smooth={true}

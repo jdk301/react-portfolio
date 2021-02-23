@@ -5,7 +5,7 @@ export const projectData = [
     description:
       "An app to record and track your expenses. Uses Firebase to store user data and Google to authenticate/login. Implements Redux store, state management, and other functionalities.",
     tech:
-      "HTML, CSS, JavaScript, React, Redux, Firebase, Sass, Babel, Webpack, Heroku",
+      "HTML, CSS, JavaScript, Node.js, React, Redux, Firebase, Sass, Babel, Webpack, Heroku",
     image: "../images/expensify-app.png",
     url: "https://react-course-2-expensify-jdev.herokuapp.com/",
     github: "https://github.com/jdk301/Expensify-App",
@@ -15,7 +15,7 @@ export const projectData = [
     name: "Indecision App",
     description:
       "A simple React app to select a random action. This app was built on the Udemy React Course by Andrew Mead.",
-    tech: "CSS, Sass, JavaScript, React, Babel, Webpack, Heroku",
+    tech: "CSS, Sass, JavaScript, Node.js, React, Babel, Webpack, Heroku",
     image: "../images/indecision-app.png",
     url: "https://indecision-app-jdev.herokuapp.com/",
     github: "https://github.com/jdk301/Indecision-App",

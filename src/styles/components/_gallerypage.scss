@@ -6,7 +6,7 @@
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(8, 5vw);
-  grid-gap: $xs-size;
+  grid-gap: $xxs-size;
   margin-left: $margin-w;
   margin-right: $margin-w;
 }
@@ -16,7 +16,6 @@
   object-fit: contain;
   transition: 0.5s;
   object-position: center 0;
-  //border: solid;
 
   &:hover {
     transform: scale(1.05, 1.05);

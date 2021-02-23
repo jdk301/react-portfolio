@@ -3,13 +3,42 @@ import React from "react";
 const AboutPage = () => (
   <section className="about" id="about">
     <div className="section-header">
-      <h1 className="title">Me</h1>
+      <h1 className="title">About</h1>
     </div>
 
     <div className="about-wrapper">
-      <div className="about-item item1"></div>
+      <div className="about-item item1">
+        <img className="headshot" src="/images/headshot.png" />
+      </div>
 
       <div className="about-item item2">
+        <p>
+          <b>Hi, I'm Justin &#128171;</b>
+          <br />
+          I'm a Junior Front End Web Developer and UI/UX Designer with
+          experience in delivering end-to-end React applications and websites.
+          <br />
+          I'm passionate about creating elegant and lasting products through
+          AGILE life cycles, a positive mindset, and continuous growth.
+          <br />
+          <br />
+          You can view my resume here:{" "}
+          <a href={"/documents/justin_kim.pdf"} target="_blank">
+            justin_kim.pdf
+          </a>
+        </p>
+      </div>
+
+      {/* <div className="about-item item3">
+        <p>
+          You can view my resume here:{" "}
+          <a href={"/documents/justin_kim.pdf"} target="_blank">
+            justin_kim.pdf
+          </a>
+        </p>
+      </div> */}
+
+      {/* <div className="about-item item2">
         <p>
           <img className="img-desc" src="/images/location.png" />
           Gaithersburg, Maryland
@@ -56,7 +85,7 @@ const AboutPage = () => (
           <img className="img-desc" src="/images/affinity.png" />
           Affinity Designer
         </div>
-      </div>
+      </div> 
 
       <div className="about-item item4">
         <div>
@@ -97,7 +126,7 @@ const AboutPage = () => (
           <span className="skill">Business Analysis</span>
           <span className="skill">Training</span>
         </div>
-      </div>
+      </div> */}
     </div>
   </section>
 );
